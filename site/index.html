@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>홍익학당 · 내용 검색</title>
+<meta name="description" content="홍익학당 영상 속 내용을 검색하고, 그 장면으로 바로 이동하세요.">
+<meta name="theme-color" content="#05070f">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <h1 id="site-title">홍익학당</h1>
+      <p class="lede" id="lede">영상 속 내용을 검색하고, 그 순간으로 바로 이동하세요.</p>
+    </div>
+
+    <div class="scope" role="radiogroup" aria-label="검색 범위">
+      <button type="button" role="radio" aria-checked="true" data-scope="text">내용</button>
+      <button type="button" role="radio" aria-checked="false" data-scope="title">제목</button>
+    </div>
+
+    <form class="searchbar" role="search" onsubmit="return false">
+      <label class="sr-only" for="q">내용 검색</label>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="내용 검색" autofocus>
+      <kbd class="hint" aria-hidden="true">/</kbd>
+    </form>
+    <p class="stats" id="stats-line"></p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <label><span class="sr-only">유형</span><select id="f-type"><option value="">모든 유형</option></select></label>
+    <label><span class="sr-only">연도</span><select id="f-year"><option value="">모든 연도</option></select></label>
+    <label><span class="sr-only">정렬</span><select id="f-sort">
+      <option value="">관련도</option>
+      <option value="new">최신순</option>
+      <option value="old">오래된순</option>
+    </select></label>
+    <span class="count" id="count" aria-live="polite"></span>
+  </div>
+
+  <div class="layout">
+    <aside class="player-panel" id="panel" hidden aria-label="재생 중">
+      <div class="player-frame"><div id="player"></div></div>
+      <div class="now">
+        <p class="now-title" id="now-title"></p>
+        <div class="now-nav">
+          <button type="button" id="prev" aria-label="이전 장면">‹ 이전</button>
+          <span id="now-pos"></span>
+          <button type="button" id="next" aria-label="다음 장면">다음 ›</button>
+          <a id="open-yt" target="_blank" rel="noopener">YouTube ↗</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="results" id="results">
+      <section class="empty" id="empty">
+        <p class="empty-label">추천 검색어</p>
+        <div class="chips">
+          <button type="button" data-q="참나">참나</button>
+          <button type="button" data-q="양심">양심</button>
+          <button type="button" data-q="깨어있음">깨어있음</button>
+          <button type="button" data-q="마음챙김">마음챙김</button>
+          <button type="button" data-q="주역">주역</button>
+          <button type="button" data-q="천부경">천부경</button>
+        </div>
+      </section>
+      <ol class="hits" id="hits"></ol>
+      <button type="button" class="more" id="more" hidden>더 보기</button>
+    </main>
+  </div>
+</div>
+
+<footer class="wrap foot">
+  <p>자막은 YouTube 자막(일부 자동 생성)을 기반으로 하여 일부 표현이 부정확할 수 있습니다. <span id="updated"></span></p>
+</footer>
+
+<script src="sky.js" defer></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

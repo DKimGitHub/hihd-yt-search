@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.tmp
+# Generated; rebuilt by update.ps1
+site/pagefind/
+data/crawl.log
+logs/
+.claude/
+.claude/
