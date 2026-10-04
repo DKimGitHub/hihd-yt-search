@@ -40,12 +40,12 @@ def raw_type(title, cfg):
 def assign_types(videos, cfg):
     """Set v["type"], the value of the 유형 search filter.
 
-    Live streams: '라이브 · <name>' for the configured live shows, else a shared bucket.
+    Live streams: '라이브 · <series>' from the title's [prefix] (or title_rules);
+    streams with neither share the live_other bucket.
     Videos: own name when common enough, otherwise a keyword-based group.
     A series is shown with its most common spelling.
     """
     tc = cfg["types"]
-    live_shows = {_key(s) for s in tc["live_shows"]}
     counts, spellings = {}, {}
     for v in videos:
         key, display = v["_raw"] = raw_type(v["title"], cfg)
@@ -58,7 +58,7 @@ def assign_types(videos, cfg):
         key, _ = v.pop("_raw")
         name = name_of[key]
         if v.get("live"):
-            v["type"] = LIVE_PREFIX + (name if key in live_shows else tc["live_other"])
+            v["type"] = LIVE_PREFIX + (name if key != "기타" else tc["live_other"])
         elif counts[key] >= tc["min_count"]:
             v["type"] = name
         else:

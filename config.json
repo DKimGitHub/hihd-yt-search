@@ -28,7 +28,6 @@
       ["HiHDTV|HITV|\\(방송\\)", "홍익학당 방송"],
       ["^윤홍식의\\s", "윤홍식의 강의"]
     ],
-    "live_shows": ["양심톡톡 Live", "정토 LIVE", "홍익학당 Live", "양덕 LIVE"],
     "live_other": "특집·기타",
     "min_count": 10,
     "groups": {

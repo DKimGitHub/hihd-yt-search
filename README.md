@@ -4,7 +4,7 @@ A static website where viewers search **what is said inside** the channel's vide
 
 - Transcripts come only from **public** sources. No channel-owner login is needed.
 - The index uses only original Korean captions. Auto-translated tracks and misdetected-language ASR are ignored, and titles are fetched in Korean.
-- The 유형 filter has the channel's live shows (양심톡톡 Live · 정토 LIVE · 홍익학당 Live · 양덕 LIVE · 특집·기타) plus video types taken from the `[…]` title prefix, or from `title_rules` for titles without one.
+- The 유형 filter groups live streams and videos by the `[…]` title prefix (live streams as `라이브 · <prefix>`), or by `title_rules` for titles without one.
 - Cosmic theme: a live starfield (`site/sky.js`, star clusters, twinkling, shooting stars; static when the visitor prefers reduced motion) behind glass panels.
 - The site is static (HTML + [Pagefind](https://pagefind.app)), so hosting is free and there's no server.
 
@@ -47,7 +47,6 @@ Or run the steps individually from `ingest/`:
 ### Adjusting the types (config.json → `types`)
 - `fixes`: variant spellings mapped to one series (e.g. `윤홍식의3분인문학` → `3분 인문학`); spacing and case are ignored when grouping
 - `title_rules`: `[regex, type]` pairs for titles without a `[prefix]` (e.g. `^윤홍식의\s*철학\s*힐링` → `철학힐링`)
-- `live_shows`: prefixes shown as their own live category
 - `min_count`: video types with fewer videos than this are merged into a group
 - `groups`: rules for merging small types into a group (a type goes into the group whose keywords its name contains, otherwise into `기타`)
 
