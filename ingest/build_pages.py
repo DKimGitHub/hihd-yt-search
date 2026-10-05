@@ -10,6 +10,7 @@ import json
 
 from chunk import chunk, fmt_time
 from common import SITE, STATE_FILE, TRANSCRIPTS, VIDEOS_FILE, load_config, load_json, save_json
+from fetch_videos import assign_types
 
 PAGE = """<!doctype html>
 <html lang="{lang}">
@@ -52,6 +53,9 @@ SECTION = """  <section>
 def main():
     cfg = load_config()
     videos = load_json(VIDEOS_FILE, [])
+    # Types come from the current config rules (in memory only), so rule changes
+    # show up on the next build without re-listing the channel.
+    assign_types(videos, cfg)
     state = load_json(STATE_FILE, {})
     out_dir = SITE / "video"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -88,9 +92,14 @@ def main():
         seconds += v.get("duration") or 0
 
     # Title search: every playable video, including those without captions.
-    # Compact rows: [id, title, date, duration, type, has_transcript_page]
+    # Compact rows: [id, title, date, duration, type, captions]
+    # captions: 1 = transcript page, 0 = confirmed no captions, 2 = not fetched yet
+    def captions(v):
+        if f"{v['id']}.html" in keep:
+            return 1
+        return 0 if state.get(v["id"], {}).get("status") == "none" else 2
     titles = [[v["id"], v["title"], v.get("published") or "", v.get("duration") or 0,
-               v.get("type", "기타"), int(f"{v['id']}.html" in keep)]
+               v.get("type", "기타"), captions(v)]
               for v in videos
               if state.get(v["id"], {}).get("status") not in ("members", "unavailable")]
     (SITE / "titles.json").write_text(
