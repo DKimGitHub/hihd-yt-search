@@ -413,3 +413,14 @@ mark {
   border-radius: 999px; padding: 4px 14px; font-weight: 600;
 }
 .export button:hover { background: rgb(185 166 255 / .2); }
+
+/* Manual (human-made) captions badge */
+.badge.cc { color: var(--gold); background: rgb(255 214 138 / .1); border-color: rgb(255 214 138 / .28); }
+
+/* Player panel: 자막 보기 sits next to the YouTube link */
+.now-nav #open-tr { margin-left: auto; }
+.now-nav #open-tr + #open-yt { margin-left: 12px; }
+.now-nav #open-tr[hidden] + #open-yt { margin-left: auto; }
+
+/* Transcript page: the segment that was playing when 자막 보기 was pressed */
+.transcript-page section.current { background: rgb(125 211 252 / .1); }
