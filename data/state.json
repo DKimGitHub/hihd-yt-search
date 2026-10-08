@@ -8184,9 +8184,10 @@
   "at": "2026-10-04T00:03:38"
  },
  "rJUWdfdNzZs": {
-  "status": "error",
-  "error": "HTTPSConnectionPool(host='www.youtube.com', port=443): Read timed out. (read timeout=20.0)",
-  "tries": 1
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 2,
+  "at": "2026-10-08T05:56:03"
  },
  "BBdohgvSJl4": {
   "status": "done",
@@ -32639,9 +32640,10 @@
   "at": "2026-10-05T01:32:36"
  },
  "r9fDkaMJebE": {
-  "status": "error",
-  "error": "HTTPSConnection(host='www.youtube.com', port=443): Failed to resolve 'www.youtube.com' ([Errno 11001] getaddrinfo failed)",
-  "tries": 1
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 2,
+  "at": "2026-10-08T05:56:07"
  },
  "zpvkIISP3DE": {
   "status": "done",
@@ -40784,5 +40786,35 @@
   "source": "yt-dlp",
   "tries": 1,
   "at": "2026-10-05T04:09:12"
+ },
+ "ICAaifXaHdQ": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-10-08T05:55:49"
+ },
+ "ss0Aug7FXok": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-10-08T05:55:54"
+ },
+ "dvciA0E6l3o": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-10-08T05:55:59"
+ },
+ "CbmytNtCSno": {
+  "status": "none",
+  "source": null,
+  "tries": 1,
+  "at": "2026-10-08T05:56:12"
+ },
+ "cbF6l7IvF54": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-10-08T05:56:16"
  }
 }
