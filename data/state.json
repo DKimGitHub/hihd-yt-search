@@ -40806,15 +40806,261 @@
   "at": "2026-10-08T05:55:59"
  },
  "CbmytNtCSno": {
-  "status": "none",
-  "source": null,
-  "tries": 1,
-  "at": "2026-10-08T05:56:12"
+  "status": "done",
+  "source": "transcript-api",
+  "tries": 2,
+  "at": "2026-11-04T23:09:24"
  },
  "cbF6l7IvF54": {
   "status": "done",
   "source": "yt-dlp",
   "tries": 1,
   "at": "2026-10-08T05:56:16"
+ },
+ "zTaYqtPLX8I": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:05:22"
+ },
+ "NeddF2raRdw": {
+  "status": "done",
+  "source": "transcript-api",
+  "tries": 2,
+  "at": "2026-11-11T13:02:38"
+ },
+ "qOPjGxEMOEg": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:05:32"
+ },
+ "hqA6WawOquQ": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:05:37"
+ },
+ "nkA2S2j1AGg": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:05:44"
+ },
+ "znIZ7H-ZBd8": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:05:50"
+ },
+ "6x9LgnNwzJI": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:05:55"
+ },
+ "xthUPE_P-cs": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:02"
+ },
+ "yDej7YfK63I": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:08"
+ },
+ "mkByH_gsOXg": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:14"
+ },
+ "OsZUHpNG6jk": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:19"
+ },
+ "RwS7OIR9-Og": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:25"
+ },
+ "BXhKa7Tr5eo": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:31"
+ },
+ "XoYuUnaMPp8": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:36"
+ },
+ "pJTMjy06MPE": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:46"
+ },
+ "AF-oqrAgRkA": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:06:52"
+ },
+ "4SkCMc0_kCs": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:07:10"
+ },
+ "sPkTOkE84kg": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:07:17"
+ },
+ "FWyQ9qSc4Ls": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:07:28"
+ },
+ "MwYasUAzy_I": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:07:35"
+ },
+ "vEDReva6CJU": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:07:43"
+ },
+ "D3VR4HzLzV4": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:07:51"
+ },
+ "0S2cHFyR6uI": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:07:57"
+ },
+ "MpGdzBM2uZk": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:02"
+ },
+ "afAaouS93ug": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:11"
+ },
+ "MjE-49jZIWU": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:20"
+ },
+ "5Y6-Z9UJDJM": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:26"
+ },
+ "rgIyhhDohss": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:32"
+ },
+ "UkArTtFQuIw": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:39"
+ },
+ "rbypgdTiRAE": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:46"
+ },
+ "dcsvc3VYp0g": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:51"
+ },
+ "7t0pJI09Zeg": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:08:56"
+ },
+ "6cPo4nTvD3k": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:09:02"
+ },
+ "BwXgySLhC1M": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:09:09"
+ },
+ "BqaPtTAuXTg": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:09:15"
+ },
+ "sQ2PVwUB1Fk": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-04T23:09:19"
+ },
+ "WhPhMVkcM2A": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-11T13:02:19"
+ },
+ "xRO9LymhsvE": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-11T13:02:24"
+ },
+ "hmlvgp5ayjk": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-11T13:02:28"
+ },
+ "tyczwzQ_a54": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-11T13:02:33"
+ },
+ "qNN_e-29_qs": {
+  "status": "done",
+  "source": "yt-dlp",
+  "tries": 1,
+  "at": "2026-11-11T13:02:42"
  }
 }
